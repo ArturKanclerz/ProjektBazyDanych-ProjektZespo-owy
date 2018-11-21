@@ -1,0 +1,385 @@
+Nowy Klient:
+Artur Kanclerz L: moj_login 1
+
+Pumi Strus passy: L:Pumi P:Pumi 2
+Adam Malysz Adam Lec 3
+Izabela Lecka Lalka 123qwe 4
+Krzysztof Ibisz 5
+
+
+Nowy Dostawca:
+Rafal Rudnicki 1
+
+Zbigniew Stonoga 2
+
+Nowy Administrator
+Krzysztof Rosolowski 1
+
+
+Lista produktow: ziemniaki 4.5, surowka coleslaw 3, surowka wiosenna 5, frytki 5, ryz 4, sprite 3,cola 3
+
+Lista produktow cd: puree ziemniaczane 5, drobiowy 4, schabowy 4, mielony 3, mizeria 4
+
+Lista zestawow: 
+- zestaw1(ryz, surowka wiosenna, schabowy) 13
+- zestaw2(ziemniaki,surowka coleslaw,mielony) 10.5
+- zestaw3(frytki,surowka wiosenna,schabowy) 14
+
+
+- zestaw4(puree ziemniaczane, mizeria, drobiowy) 13
+- zestaw5(frytki, mizeria, drobiowy) 13
+
+
+Zamowienie1:
+zestaw1, sprite
+Termin dostawy: 20/12/2017 17:00
+Kanclerz 1
+
+Zamowienie2:
+zestaw3, sprite x2,cola
+Termin dostawy: 22/12/2017 18:00
+Kanclerz 1
+
+Zamowienie3:
+zestaw5, sprite, cola
+Termin dostawy: 26/04/2018 18:00
+Strus 2
+
+Zamowienie4:
+zestaw4, mizeria
+Termin dostawy: 27/04/2018 12:00
+Malysz 3
+
+Zamowienie5:
+zestaw2, frytki, sprite
+Termin dostawy: 27/04/2018 13:00
+Strus 2
+
+Zamowienie6:
+zestaw1, surowka, cola x2
+Termin dostawy: 27/04/2018 14:00
+Ibisz 5
+
+
+
+-- ------------------Generowanie alergenow----------------------------------------------
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,0,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,0,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,0,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,0,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,1,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,1,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,1,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,0,1,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,0,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,0,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,0,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,0,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,1,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,1,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,1,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(0,1,1,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,0,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,0,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,0,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,0,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,1,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,1,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,1,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,0,1,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,0,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,0,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,0,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,0,1,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,1,0,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,1,0,1);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,1,1,0);
+INSERT INTO Alergeny ( Alergeny.Laktoza,Alergeny.Gluten,Alergeny.Pszenica,Alergeny.Kofeina,Alergeny.Glutaminian_sodu) VALUES(1,1,1,1,1);
+
+-- ------------------Dodawanie Klienta---------------------------------------------------
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('moj_login','moje_haslo','K');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'moj_login');
+
+INSERT INTO Klienci (Klienci.ImieKlienta,Klienci.NazwiskoKlienta,Klienci.Miejscowosc,Klienci.Ulica,Klienci.Nr_lokalu,Klienci.Logowanie_idUzytkownika)
+VALUES ('Artur','Kanclerz','Lublin','Labedzia','13',@iddd);
+
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('Pumi','Pumi','K');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'Pumi');
+
+INSERT INTO Klienci (Klienci.ImieKlienta,Klienci.NazwiskoKlienta,Klienci.Miejscowosc,Klienci.Ulica,Klienci.Nr_lokalu,Klienci.Logowanie_idUzytkownika)
+VALUES ('Pumi','Strus','Lublin','pogodna','15',@iddd);
+
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('Adam','Lec','K');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'Adam');
+
+INSERT INTO Klienci (Klienci.ImieKlienta,Klienci.NazwiskoKlienta,Klienci.Miejscowosc,Klienci.Ulica,Klienci.Nr_lokalu,Klienci.Logowanie_idUzytkownika)
+VALUES ('Adam','Malysz','Lublin','Pogodna','24/34',@iddd);
+
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('Lalka','123qwe','K');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'Lalka');
+
+INSERT INTO Klienci (Klienci.ImieKlienta,Klienci.NazwiskoKlienta,Klienci.Miejscowosc,Klienci.Ulica,Klienci.Nr_lokalu,Klienci.Logowanie_idUzytkownika)
+VALUES ('Izabela','Lecka','Lublin','Koncertowa','2b/5',@iddd);
+
+
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('Wiecznie_mlody','gwc123','K');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'Wiecznie_mlody');
+
+INSERT INTO Klienci (Klienci.ImieKlienta,Klienci.NazwiskoKlienta,Klienci.Miejscowosc,Klienci.Ulica,Klienci.Nr_lokalu,Klienci.Logowanie_idUzytkownika)
+VALUES ('Krzysztof','Ibisz','Lublin','Muzyczna','15b/43',@iddd);
+
+
+
+-- ------------------Dodawanie Dostawcy--------------------------------------------------
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('moj_login2','moje_haslo2','D');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'moj_login2');
+
+INSERT INTO Dostawcy (Dostawcy.ImieDostawcy,Dostawcy.NazwiskoDostawcy,Dostawcy.TelefonDostawcy,Dostawcy.Logowanie_idUzytkownika)
+VALUES ('Rafal','Rudnicki','555-222-111',@iddd);
+
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('Prawo','Sprawiedliwosc','D');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'Prawo');
+
+INSERT INTO Dostawcy (Dostawcy.ImieDostawcy,Dostawcy.NazwiskoDostawcy,Dostawcy.TelefonDostawcy,Dostawcy.Logowanie_idUzytkownika)
+VALUES ('Zbigniew','Stonoga','523-321-857',@iddd);
+
+-- ------------------Dodawanie Administratora--------------------------------------------------
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('moj_login3','moje_haslo3','A');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'moj_login3');
+
+INSERT INTO Administratorzy (Administratorzy.ImieAdministratora,Administratorzy.NazwiskoAdministratora,Administratorzy.Logowanie_idUzytkownika)
+VALUES('Krzys','Rosolowski',@iddd);
+
+-- ----------------- Wstawianie produktow------------------------------------------------
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 0 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu, Produkty.CenaProduktu) VALUES ('Ziemniaki',@iddd, '4.5');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 1 AND Alergeny.Gluten = 0 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu, Produkty.CenaProduktu) VALUES ('surowka coleslaw',@iddd,'3');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 1 AND Alergeny.Gluten = 0 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu, Produkty.CenaProduktu) VALUES ('surowka wiosenna',@iddd,'5');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 0 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu, Produkty.CenaProduktu) VALUES ('frytki',@iddd,'5');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu, Produkty.CenaProduktu) VALUES ('ryz',@iddd,'4');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 1 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu, Produkty.CenaProduktu) VALUES ('sprite',@iddd,'3');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 0 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 1 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu,Produkty.CenaProduktu) VALUES ('cola',@iddd,'3');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 1 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu,Produkty.CenaProduktu) VALUES ('Puree_ziemniaczane',@iddd,'5');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 1 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu,Produkty.CenaProduktu) VALUES ('drobiowy',@iddd,'4');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 1 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu,Produkty.CenaProduktu) VALUES ('mielony',@iddd,'3');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 1 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu,Produkty.CenaProduktu) VALUES ('schabowy',@iddd,'4');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 1 AND Alergeny.Gluten = 0 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 0);
+INSERT INTO Produkty (Produkty.NazwaProduktu, Produkty.Alergeny_idAlergenu,Produkty.CenaProduktu) VALUES ('mizeria',@iddd,'4');
+
+
+
+-- ------------------Wstawianie zestawow-------------------------------------------------
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Zestawy (Zestawy.NazwaZestawu,Zestawy.Skladniki,Zestawy.Alergeny_idAlergenu,Zestawy.CenaZestawu) VALUES ('Zestaw1','ryz, surowka wiosenna, schabowy',@iddd,'13');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Zestawy (Zestawy.NazwaZestawu,Zestawy.Skladniki,Zestawy.Alergeny_idAlergenu,Zestawy.CenaZestawu) VALUES ('Zestaw2','ziemniaki, surowka coleslaw, mielony',@iddd,'10.5');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Zestawy (Zestawy.NazwaZestawu,Zestawy.Skladniki,Zestawy.Alergeny_idAlergenu,Zestawy.CenaZestawu) VALUES ('Zestaw3','frytki, surowka wiosenna, schabowy',@iddd,'14');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Zestawy (Zestawy.NazwaZestawu,Zestawy.Skladniki,Zestawy.Alergeny_idAlergenu,Zestawy.CenaZestawu) VALUES ('Zestaw4','puree_ziemniaczane, mizeria, drobiowy',@iddd,'13');
+
+SET @iddd = (SELECT Alergeny.idAlergenu FROM Alergeny WHERE Alergeny.Laktoza = 0 AND Alergeny.Gluten = 1 AND Alergeny.Pszenica = 0 AND Alergeny.Kofeina = 0 AND Alergeny.Glutaminian_sodu = 1);
+INSERT INTO Zestawy (Zestawy.NazwaZestawu,Zestawy.Skladniki,Zestawy.Alergeny_idAlergenu,Zestawy.CenaZestawu) VALUES ('Zestaw5','frytki, mizeria, drobiowy',@iddd,'13');
+
+
+
+-- ------------------Tworzenie Zamowienia----------------------------------------------
+SET @id_klienta = (SELECT Klienci.idKlienta FROM Klienci, Logowanie WHERE Logowanie.Login = 'moj_login' AND Logowanie.idUzytkownika = Klienci.Logowanie_idUzytkownika );
+INSERT INTO `Zamowienia` ( `Zamowienia`.`Status`,`Zamowienia`.`Data_zamowienia`,`Zamowienia`.`Planowana_data_dostawy`,Zamowienia.Dostawcy_idDostawcy,`Zamowienia`.`Klienci_idKlienta`)
+VALUES ('Otwarte','2018-01-03 10:34:09','2018-01-05 10:34:00',1,@id_klienta);
+
+SET @id_klienta = (SELECT Klienci.idKlienta FROM Klienci, Logowanie WHERE Logowanie.Login = 'moj_login' AND Logowanie.idUzytkownika = Klienci.Logowanie_idUzytkownika );
+INSERT INTO `Zamowienia` ( `Zamowienia`.`Status`,`Zamowienia`.`Data_zamowienia`,`Zamowienia`.`Planowana_data_dostawy`,`Zamowienia`.`Klienci_idKlienta`,`Zamowienia`.`Dostawcy_idDostawcy`)
+VALUES ('Zamkniete','2017-12-27 12:31:09','2017-12-30 18:11:00',@id_klienta,1);
+
+SET @id_klienta = (SELECT Klienci.idKlienta FROM Klienci, Logowanie WHERE Logowanie.Login = 'Pumi' AND Logowanie.idUzytkownika = Klienci.Logowanie_idUzytkownika );
+INSERT INTO `Zamowienia` ( `Zamowienia`.`Status`,`Zamowienia`.`Data_zamowienia`,`Zamowienia`.`Planowana_data_dostawy`,`Zamowienia`.`Klienci_idKlienta`,`Zamowienia`.`Dostawcy_idDostawcy`)
+VALUES ('Otwarte','2018-04-26 10:00:00','2018-04-26 18:00:00',@id_klienta,2);
+
+SET @id_klienta = (SELECT Klienci.idKlienta FROM Klienci, Logowanie WHERE Logowanie.Login = 'Adam' AND Logowanie.idUzytkownika = Klienci.Logowanie_idUzytkownika );
+INSERT INTO `Zamowienia` ( `Zamowienia`.`Status`,`Zamowienia`.`Data_zamowienia`,`Zamowienia`.`Planowana_data_dostawy`,`Zamowienia`.`Klienci_idKlienta`,`Zamowienia`.`Dostawcy_idDostawcy`)
+VALUES ('Otwarte','2018-04-27 06:14:23','2018-04-27 12:00:00',@id_klienta,2);
+
+SET @id_klienta = (SELECT Klienci.idKlienta FROM Klienci, Logowanie WHERE Logowanie.Login = 'Pumi' AND Logowanie.idUzytkownika = Klienci.Logowanie_idUzytkownika );
+INSERT INTO `Zamowienia` ( `Zamowienia`.`Status`,`Zamowienia`.`Data_zamowienia`,`Zamowienia`.`Planowana_data_dostawy`,`Zamowienia`.`Klienci_idKlienta`,`Zamowienia`.`Dostawcy_idDostawcy`)
+VALUES ('Otwarte','2018-04-27 08:00:23','2018-04-27 13:00:00',@id_klienta,2);
+
+SET @id_klienta = (SELECT Klienci.idKlienta FROM Klienci, Logowanie WHERE Logowanie.Login = 'Wiecznie_mlody' AND Logowanie.idUzytkownika = Klienci.Logowanie_idUzytkownika );
+INSERT INTO `Zamowienia` ( `Zamowienia`.`Status`,`Zamowienia`.`Data_zamowienia`,`Zamowienia`.`Planowana_data_dostawy`,`Zamowienia`.`Klienci_idKlienta`,`Zamowienia`.`Dostawcy_idDostawcy`)
+VALUES ('Otwarte','2018-04-27 07:05:12','2018-04-27 14:00:00',@id_klienta,1);
+
+
+
+-- ------------------Dodawanie zestawu do zamowienia----------------------------------------------
+SET @id_zes = (SELECT Zestawy.idZestawu FROM Zestawy WHERE Zestawy.NazwaZestawu = 'Zestaw1');
+INSERT INTO `Konkretne_zamowienie_zestawu` (
+    `Konkretne_zamowienie_zestawu`.`Ilosc_zestawow`, 
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_idZamowienia`,
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_Klienci_idKlienta`,
+    `Konkretne_zamowienie_zestawu`.`Zestawy_idZestawu`)
+VALUES (1,1,1,@id_zes);
+
+SET @id_zes = (SELECT Zestawy.idZestawu FROM Zestawy WHERE Zestawy.NazwaZestawu = 'Zestaw3');
+INSERT INTO `Konkretne_zamowienie_zestawu` (
+    `Konkretne_zamowienie_zestawu`.`Ilosc_zestawow`, 
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_idZamowienia`,
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_Klienci_idKlienta`,
+    `Konkretne_zamowienie_zestawu`.`Zestawy_idZestawu`)
+VALUES (1,2,1,@id_zes);
+
+SET @id_zes = (SELECT Zestawy.idZestawu FROM Zestawy WHERE Zestawy.NazwaZestawu = 'Zestaw5');
+INSERT INTO `Konkretne_zamowienie_zestawu` (
+    `Konkretne_zamowienie_zestawu`.`Ilosc_zestawow`, 
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_idZamowienia`,
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_Klienci_idKlienta`,
+    `Konkretne_zamowienie_zestawu`.`Zestawy_idZestawu`)
+VALUES (1,3,2,@id_zes);
+
+SET @id_zes = (SELECT Zestawy.idZestawu FROM Zestawy WHERE Zestawy.NazwaZestawu = 'Zestaw4');
+INSERT INTO `Konkretne_zamowienie_zestawu` (
+    `Konkretne_zamowienie_zestawu`.`Ilosc_zestawow`, 
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_idZamowienia`,
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_Klienci_idKlienta`,
+    `Konkretne_zamowienie_zestawu`.`Zestawy_idZestawu`)
+VALUES (1,4,3,@id_zes);
+
+SET @id_zes = (SELECT Zestawy.idZestawu FROM Zestawy WHERE Zestawy.NazwaZestawu = 'Zestaw2');
+INSERT INTO `Konkretne_zamowienie_zestawu` (
+    `Konkretne_zamowienie_zestawu`.`Ilosc_zestawow`, 
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_idZamowienia`,
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_Klienci_idKlienta`,
+    `Konkretne_zamowienie_zestawu`.`Zestawy_idZestawu`)
+VALUES (1,5,2,@id_zes);
+
+SET @id_zes = (SELECT Zestawy.idZestawu FROM Zestawy WHERE Zestawy.NazwaZestawu = 'Zestaw1');
+INSERT INTO `Konkretne_zamowienie_zestawu` (
+    `Konkretne_zamowienie_zestawu`.`Ilosc_zestawow`, 
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_idZamowienia`,
+    `Konkretne_zamowienie_zestawu`.`Zamowienia_Klienci_idKlienta`,
+    `Konkretne_zamowienie_zestawu`.`Zestawy_idZestawu`)
+VALUES (1,6,5,@id_zes);
+
+
+
+-- ------------------Dodawanie produktu do zamowienia----------------------------------------------
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'sprite');               
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(1,1,1,@id_prod);
+
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'sprite');              
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(2,2,1,@id_prod);
+
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'cola');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(1,2,1,@id_prod);
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'sprite');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(2,3,2,@id_prod);
+
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'cola');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(1,3,2,@id_prod);
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'mizeria');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(1,4,3,@id_prod);
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'frytki');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(2,5,2,@id_prod);
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'sprite');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(1,5,2,@id_prod);
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'surowka wiosenna');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(1,6,5,@id_prod);
+
+
+SET @id_prod = (SELECT Produkty.idProduktu FROM Produkty WHERE Produkty.NazwaProduktu = 'cola');             
+INSERT INTO `Konkretne_zamowienie_produktu` ( `Konkretne_zamowienie_produktu`.`Ilosc_produktu`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_idZamowienia`,
+                                             `Konkretne_zamowienie_produktu`.`Zamowienia_Klienci_idKlienta`,
+                                             `Konkretne_zamowienie_produktu`.`Produkty_idProduktu`)
+                VALUES(2,6,5,@id_prod);
+
+
+-- ---------------------------------Dodanie nieokreœlonego dostawcy (Domyœlny dostawca nowego zamówienia)----------------
+INSERT INTO Logowanie (Logowanie.Login,Logowanie.Haslo,Logowanie.Stopien) VALUES ('Nieokreslony','Nieokreslony','D');
+
+SET @iddd = ( SELECT Logowanie.idUzytkownika FROM Logowanie WHERE Logowanie.Login = 'Nieokreslony');
+
+INSERT INTO Dostawcy (Dostawcy.ImieDostawcy,Dostawcy.NazwiskoDostawcy,Dostawcy.TelefonDostawcy,Dostawcy.Logowanie_idUzytkownika)
+VALUES ('Dostawca','Nieokreslony','000-000-000',@iddd);
+
+UPDATE `Logowanie` SET `idUzytkownika` = '0' WHERE `Logowanie`.`idUzytkownika` = 9;
+UPDATE `Dostawcy` SET `idDostawcy` = '0' WHERE `Dostawcy`.`idDostawcy` = 3 AND `Dostawcy`.`Logowanie_idUzytkownika` = 0;
+
+-- ----------------------------------Przypisanie dostawcy do zamówienia---------------------------------------------------
+UPDATE Zamowienia SET Zamowienia.Dostawcy_idDostawcy = 1 WHERE Zamowienia.idZamowienia = 2;
+
